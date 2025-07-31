@@ -1,0 +1,89 @@
+<testsuite name="zenportal.Zen Portal Login and Logout functionality" tests="2" errors="1" failures="1" skipped="0" time="23.591657" timestamp="2025-07-31T16:54:57.497157" hostname="DESKTOP-84QIP8C"><testcase classname="zenportal.Zen Portal Login and Logout functionality" name="Login to Zen Portal with Multiple credentials -- @1.1 " status="failed" time="6.416704"><error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;img id=&quot;profile-click-icon&quot; class=&quot;profile-click-icon&quot; src=&quot;/images/commonComponents/profileIcon/dropdownArrowLogo.svg&quot;&gt; is not clickable at point (1229, 41). Other element would receive the click: &lt;div aria-hidden=&quot;true&quot; class=&quot;MuiBackdrop-root MuiModal-backdrop css-919eu4&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=138.0.7204.169)&#10;Stacktrace:&#10;&#09;GetHandleVerifier [0x0x7ff6589ae415+77285]&#10;&#09;GetHandleVerifier [0x0x7ff6589ae470+77376]&#10;&#09;(No symbol) [0x0x7ff658779a6a]&#10;&#09;(No symbol) [0x0x7ff6587d83e9]&#10;&#09;(No symbol) [0x0x7ff6587d5d8b]&#10;&#09;(No symbol) [0x0x7ff6587d2dd1]&#10;&#09;(No symbol) [0x0x7ff6587d1ce1]&#10;&#09;(No symbol) [0x0x7ff6587c3458]&#10;&#09;(No symbol) [0x0x7ff6587f860a]&#10;&#09;(No symbol) [0x0x7ff6587c2d06]&#10;&#09;(No symbol) [0x0x7ff6587f8820]&#10;&#09;(No symbol) [0x0x7ff65882087f]&#10;&#09;(No symbol) [0x0x7ff6587f83e3]&#10;&#09;(No symbol) [0x0x7ff6587c1521]&#10;&#09;(No symbol) [0x0x7ff6587c22b3]&#10;&#09;GetHandleVerifier [0x0x7ff658c91efd+3107021]&#10;&#09;GetHandleVerifier [0x0x7ff658c8c29d+3083373]&#10;&#09;GetHandleVerifier [0x0x7ff658cabedd+3213485]&#10;&#09;GetHandleVerifier [0x0x7ff6589c884e+184862]&#10;&#09;GetHandleVerifier [0x0x7ff6589d055f+216879]&#10;&#09;GetHandleVerifier [0x0x7ff6589b7084+113236]&#10;&#09;GetHandleVerifier [0x0x7ff6589b7239+113673]&#10;&#09;GetHandleVerifier [0x0x7ff65899e298+11368]&#10;&#09;BaseThreadInitThunk [0x0x7ff975d2259d+29]&#10;&#09;RtlUserThreadStart [0x0x7ff977a8af78+40]&#10;">
+<![CDATA[
+Failing step: And the user must be able to log out of Zen Portal ... failed in 1.748s
+Location: features/zenportal.feature:9
+Traceback (most recent call last):
+  File "C:\Users\Navin Kumar\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Navin Kumar\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\zenportalsteps.py", line 68, in logout_zenportal
+    profile_button.click()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Navin Kumar\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 119, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Navin Kumar\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 572, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Navin Kumar\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Navin Kumar\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <img id="profile-click-icon" class="profile-click-icon" src="/images/commonComponents/profileIcon/dropdownArrowLogo.svg"> is not clickable at point (1229, 41). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);"></div>
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6589ae415+77285]
+	GetHandleVerifier [0x0x7ff6589ae470+77376]
+	(No symbol) [0x0x7ff658779a6a]
+	(No symbol) [0x0x7ff6587d83e9]
+	(No symbol) [0x0x7ff6587d5d8b]
+	(No symbol) [0x0x7ff6587d2dd1]
+	(No symbol) [0x0x7ff6587d1ce1]
+	(No symbol) [0x0x7ff6587c3458]
+	(No symbol) [0x0x7ff6587f860a]
+	(No symbol) [0x0x7ff6587c2d06]
+	(No symbol) [0x0x7ff6587f8820]
+	(No symbol) [0x0x7ff65882087f]
+	(No symbol) [0x0x7ff6587f83e3]
+	(No symbol) [0x0x7ff6587c1521]
+	(No symbol) [0x0x7ff6587c22b3]
+	GetHandleVerifier [0x0x7ff658c91efd+3107021]
+	GetHandleVerifier [0x0x7ff658c8c29d+3083373]
+	GetHandleVerifier [0x0x7ff658cabedd+3213485]
+	GetHandleVerifier [0x0x7ff6589c884e+184862]
+	GetHandleVerifier [0x0x7ff6589d055f+216879]
+	GetHandleVerifier [0x0x7ff6589b7084+113236]
+	GetHandleVerifier [0x0x7ff6589b7239+113673]
+	GetHandleVerifier [0x0x7ff65899e298+11368]
+	BaseThreadInitThunk [0x0x7ff975d2259d+29]
+	RtlUserThreadStart [0x0x7ff977a8af78+40]
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Login to Zen Portal with Multiple credentials -- @1.1 
+    Given the user launches Chrome browser ... passed in 1.655s
+    When the user open Zen Portal Homepage ... passed in 1.631s
+    And the user enters username "navinkumar.mk1712@gmail.com" and password "Guvi2025" ... passed in 0.379s
+    And the user click on Sign in button ... passed in 0.120s
+    Then the user must successfully login and reach the landing page ... passed in 0.885s
+    And the user must be able to log out of Zen Portal ... failed in 1.748s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="zenportal.Zen Portal Login and Logout functionality" name="Login to Zen Portal with Multiple credentials -- @1.2 " status="failed" time="17.174953"><failure type="AssertionError" message="Test Failed">
+<![CDATA[
+Failing step: Then the user must successfully login and reach the landing page ... failed in 10.370s
+Location: features/zenportal.feature:8
+Assertion Failed: Test Failed]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Login to Zen Portal with Multiple credentials -- @1.2 
+    Given the user launches Chrome browser ... passed in 1.667s
+    When the user open Zen Portal Homepage ... passed in 4.521s
+    And the user enters username "kumar@gmail.com" and password "Wrong2024" ... passed in 0.470s
+    And the user click on Sign in button ... passed in 0.148s
+    Then the user must successfully login and reach the landing page ... failed in 10.370s
+    And the user must be able to log out of Zen Portal ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

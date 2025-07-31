@@ -1,0 +1,262 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario Outline",
+      "location": "features/zenportal.feature:13",
+      "name": "Login to Zen Portal with Multiple credentials -- @1.1 ",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/zenportal.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/zenportalsteps.py:12"
+          },
+          "name": "the user launches Chrome browser",
+          "result": {
+            "duration": 1.8703792095184326,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/zenportal.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/zenportalsteps.py:23"
+          },
+          "name": "the user open Zen Portal Homepage",
+          "result": {
+            "duration": 0.7776572704315186,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/zenportal.feature:6",
+          "match": {
+            "arguments": [
+              {
+                "name": "username",
+                "value": "navinkumar.mk1712@gmail.com"
+              },
+              {
+                "name": "password",
+                "value": "Guvi2025"
+              }
+            ],
+            "location": "features/steps/zenportalsteps.py:28"
+          },
+          "name": "the user enters username \"navinkumar.mk1712@gmail.com\" and password \"Guvi2025\"",
+          "result": {
+            "duration": 0.9718706607818604,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/zenportal.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/zenportalsteps.py:41"
+          },
+          "name": "the user click on Sign in button",
+          "result": {
+            "duration": 0.10923480987548828,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/zenportal.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/zenportalsteps.py:51"
+          },
+          "name": "the user must successfully login and reach the landing page",
+          "result": {
+            "duration": 1.5287444591522217,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/zenportal.feature:9",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/zenportalsteps.py:64"
+          },
+          "name": "the user must be able to log out of Zen Portal",
+          "result": {
+            "duration": 1.168029546737671,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\Navin Kumar\\.venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "    ~~~~~~~~~^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\Navin Kumar\\.venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"features\\steps\\zenportalsteps.py\", line 68, in logout_zenportal",
+              "    profile_button.click()",
+              "    ~~~~~~~~~~~~~~~~~~~~^^",
+              "  File \"C:\\Users\\Navin Kumar\\.venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 119, in click",
+              "    self._execute(Command.CLICK_ELEMENT)",
+              "    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\Navin Kumar\\.venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 572, in _execute",
+              "    return self._parent.execute(command, params)",
+              "           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\Navin Kumar\\.venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 429, in execute",
+              "    self.error_handler.check_response(response)",
+              "    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^",
+              "  File \"C:\\Users\\Navin Kumar\\.venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 232, in check_response",
+              "    raise exception_class(message, screen, stacktrace)",
+              "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <img id=\"profile-click-icon\" class=\"profile-click-icon\" src=\"/images/commonComponents/profileIcon/dropdownArrowLogo.svg\"> is not clickable at point (1229, 41). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-919eu4\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);\"></div>",
+              "  (Session info: chrome=138.0.7204.169)",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x0x7ff6589ae415+77285]",
+              "\tGetHandleVerifier [0x0x7ff6589ae470+77376]",
+              "\t(No symbol) [0x0x7ff658779a6a]",
+              "\t(No symbol) [0x0x7ff6587d83e9]",
+              "\t(No symbol) [0x0x7ff6587d5d8b]",
+              "\t(No symbol) [0x0x7ff6587d2dd1]",
+              "\t(No symbol) [0x0x7ff6587d1ce1]",
+              "\t(No symbol) [0x0x7ff6587c3458]",
+              "\t(No symbol) [0x0x7ff6587f860a]",
+              "\t(No symbol) [0x0x7ff6587c2d06]",
+              "\t(No symbol) [0x0x7ff6587f8820]",
+              "\t(No symbol) [0x0x7ff65882087f]",
+              "\t(No symbol) [0x0x7ff6587f83e3]",
+              "\t(No symbol) [0x0x7ff6587c1521]",
+              "\t(No symbol) [0x0x7ff6587c22b3]",
+              "\tGetHandleVerifier [0x0x7ff658c91efd+3107021]",
+              "\tGetHandleVerifier [0x0x7ff658c8c29d+3083373]",
+              "\tGetHandleVerifier [0x0x7ff658cabedd+3213485]",
+              "\tGetHandleVerifier [0x0x7ff6589c884e+184862]",
+              "\tGetHandleVerifier [0x0x7ff6589d055f+216879]",
+              "\tGetHandleVerifier [0x0x7ff6589b7084+113236]",
+              "\tGetHandleVerifier [0x0x7ff6589b7239+113673]",
+              "\tGetHandleVerifier [0x0x7ff65899e298+11368]",
+              "\tBaseThreadInitThunk [0x0x7ff975d2259d+29]",
+              "\tRtlUserThreadStart [0x0x7ff977a8af78+40]",
+              ""
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario Outline",
+      "location": "features/zenportal.feature:14",
+      "name": "Login to Zen Portal with Multiple credentials -- @1.2 ",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/zenportal.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/zenportalsteps.py:12"
+          },
+          "name": "the user launches Chrome browser",
+          "result": {
+            "duration": 1.5792818069458008,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/zenportal.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/zenportalsteps.py:23"
+          },
+          "name": "the user open Zen Portal Homepage",
+          "result": {
+            "duration": 1.6690566539764404,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/zenportal.feature:6",
+          "match": {
+            "arguments": [
+              {
+                "name": "username",
+                "value": "kumar@gmail.com"
+              },
+              {
+                "name": "password",
+                "value": "Wrong2024"
+              }
+            ],
+            "location": "features/steps/zenportalsteps.py:28"
+          },
+          "name": "the user enters username \"kumar@gmail.com\" and password \"Wrong2024\"",
+          "result": {
+            "duration": 0.40271997451782227,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/zenportal.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/zenportalsteps.py:41"
+          },
+          "name": "the user click on Sign in button",
+          "result": {
+            "duration": 0.1364147663116455,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/zenportal.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/zenportalsteps.py:51"
+          },
+          "name": "the user must successfully login and reach the landing page",
+          "result": {
+            "duration": 10.267292499542236,
+            "error_message": "Assertion Failed: Test Failed",
+            "status": "failed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/zenportal.feature:9",
+          "name": "the user must be able to log out of Zen Portal",
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/zenportal.feature:1",
+  "name": "Zen Portal Login and Logout functionality",
+  "status": "failed",
+  "tags": []
+}
+]
